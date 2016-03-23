@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		506808431CA288410040DB97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506808421CA288410040DB97 /* AppDelegate.swift */; };
+		506808451CA288410040DB97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506808441CA288410040DB97 /* ViewController.swift */; };
+		506808481CA288410040DB97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506808461CA288410040DB97 /* Main.storyboard */; };
+		5068084A1CA288410040DB97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506808491CA288410040DB97 /* Images.xcassets */; };
+		5068084D1CA288410040DB97 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5068084B1CA288410040DB97 /* LaunchScreen.xib */; };
+		506808591CA288410040DB97 /* SecurityAuthTouchIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506808581CA288410040DB97 /* SecurityAuthTouchIDTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		506808531CA288410040DB97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 506808351CA288410040DB97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5068083C1CA288410040DB97;
+			remoteInfo = SecurityAuthTouchID;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5068083D1CA288410040DB97 /* SecurityAuthTouchID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecurityAuthTouchID.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		506808411CA288410040DB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		506808421CA288410040DB97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		506808441CA288410040DB97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		506808471CA288410040DB97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		506808491CA288410040DB97 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5068084C1CA288410040DB97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		506808521CA288410040DB97 /* SecurityAuthTouchIDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecurityAuthTouchIDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		506808571CA288410040DB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		506808581CA288410040DB97 /* SecurityAuthTouchIDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityAuthTouchIDTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5068083A1CA288410040DB97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5068084F1CA288410040DB97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		506808341CA288410040DB97 = {
+			isa = PBXGroup;
+			children = (
+				5068083F1CA288410040DB97 /* SecurityAuthTouchID */,
+				506808551CA288410040DB97 /* SecurityAuthTouchIDTests */,
+				5068083E1CA288410040DB97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5068083E1CA288410040DB97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5068083D1CA288410040DB97 /* SecurityAuthTouchID.app */,
+				506808521CA288410040DB97 /* SecurityAuthTouchIDTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5068083F1CA288410040DB97 /* SecurityAuthTouchID */ = {
+			isa = PBXGroup;
+			children = (
+				506808421CA288410040DB97 /* AppDelegate.swift */,
+				506808441CA288410040DB97 /* ViewController.swift */,
+				506808461CA288410040DB97 /* Main.storyboard */,
+				506808491CA288410040DB97 /* Images.xcassets */,
+				5068084B1CA288410040DB97 /* LaunchScreen.xib */,
+				506808401CA288410040DB97 /* Supporting Files */,
+			);
+			path = SecurityAuthTouchID;
+			sourceTree = "<group>";
+		};
+		506808401CA288410040DB97 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				506808411CA288410040DB97 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		506808551CA288410040DB97 /* SecurityAuthTouchIDTests */ = {
+			isa = PBXGroup;
+			children = (
+				506808581CA288410040DB97 /* SecurityAuthTouchIDTests.swift */,
+				506808561CA288410040DB97 /* Supporting Files */,
+			);
+			path = SecurityAuthTouchIDTests;
+			sourceTree = "<group>";
+		};
+		506808561CA288410040DB97 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				506808571CA288410040DB97 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5068083C1CA288410040DB97 /* SecurityAuthTouchID */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5068085C1CA288410040DB97 /* Build configuration list for PBXNativeTarget "SecurityAuthTouchID" */;
+			buildPhases = (
+				506808391CA288410040DB97 /* Sources */,
+				5068083A1CA288410040DB97 /* Frameworks */,
+				5068083B1CA288410040DB97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecurityAuthTouchID;
+			productName = SecurityAuthTouchID;
+			productReference = 5068083D1CA288410040DB97 /* SecurityAuthTouchID.app */;
+			productType = "com.apple.product-type.application";
+		};
+		506808511CA288410040DB97 /* SecurityAuthTouchIDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5068085F1CA288410040DB97 /* Build configuration list for PBXNativeTarget "SecurityAuthTouchIDTests" */;
+			buildPhases = (
+				5068084E1CA288410040DB97 /* Sources */,
+				5068084F1CA288410040DB97 /* Frameworks */,
+				506808501CA288410040DB97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				506808541CA288410040DB97 /* PBXTargetDependency */,
+			);
+			name = SecurityAuthTouchIDTests;
+			productName = SecurityAuthTouchIDTests;
+			productReference = 506808521CA288410040DB97 /* SecurityAuthTouchIDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		506808351CA288410040DB97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Enclave;
+				TargetAttributes = {
+					5068083C1CA288410040DB97 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					506808511CA288410040DB97 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 5068083C1CA288410040DB97;
+					};
+				};
+			};
+			buildConfigurationList = 506808381CA288410040DB97 /* Build configuration list for PBXProject "SecurityAuthTouchID" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 506808341CA288410040DB97;
+			productRefGroup = 5068083E1CA288410040DB97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5068083C1CA288410040DB97 /* SecurityAuthTouchID */,
+				506808511CA288410040DB97 /* SecurityAuthTouchIDTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5068083B1CA288410040DB97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506808481CA288410040DB97 /* Main.storyboard in Resources */,
+				5068084D1CA288410040DB97 /* LaunchScreen.xib in Resources */,
+				5068084A1CA288410040DB97 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506808501CA288410040DB97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		506808391CA288410040DB97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506808451CA288410040DB97 /* ViewController.swift in Sources */,
+				506808431CA288410040DB97 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5068084E1CA288410040DB97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506808591CA288410040DB97 /* SecurityAuthTouchIDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		506808541CA288410040DB97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5068083C1CA288410040DB97 /* SecurityAuthTouchID */;
+			targetProxy = 506808531CA288410040DB97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		506808461CA288410040DB97 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				506808471CA288410040DB97 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5068084B1CA288410040DB97 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5068084C1CA288410040DB97 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5068085A1CA288410040DB97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5068085B1CA288410040DB97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5068085D1CA288410040DB97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SecurityAuthTouchID/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5068085E1CA288410040DB97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SecurityAuthTouchID/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		506808601CA288410040DB97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SecurityAuthTouchIDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecurityAuthTouchID.app/SecurityAuthTouchID";
+			};
+			name = Debug;
+		};
+		506808611CA288410040DB97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SecurityAuthTouchIDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecurityAuthTouchID.app/SecurityAuthTouchID";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		506808381CA288410040DB97 /* Build configuration list for PBXProject "SecurityAuthTouchID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5068085A1CA288410040DB97 /* Debug */,
+				5068085B1CA288410040DB97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5068085C1CA288410040DB97 /* Build configuration list for PBXNativeTarget "SecurityAuthTouchID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5068085D1CA288410040DB97 /* Debug */,
+				5068085E1CA288410040DB97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5068085F1CA288410040DB97 /* Build configuration list for PBXNativeTarget "SecurityAuthTouchIDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506808601CA288410040DB97 /* Debug */,
+				506808611CA288410040DB97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 506808351CA288410040DB97 /* Project object */;
+}
