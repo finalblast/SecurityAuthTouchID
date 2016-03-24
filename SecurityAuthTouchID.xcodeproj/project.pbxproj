@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		503C85921CA3901F00D7584E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503C85911CA3901F00D7584E /* CloudKit.framework */; };
 		506808431CA288410040DB97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506808421CA288410040DB97 /* AppDelegate.swift */; };
 		506808451CA288410040DB97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506808441CA288410040DB97 /* ViewController.swift */; };
 		506808481CA288410040DB97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506808461CA288410040DB97 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		503C85911CA3901F00D7584E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		5068083D1CA288410040DB97 /* SecurityAuthTouchID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecurityAuthTouchID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506808411CA288410040DB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		506808421CA288410040DB97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +38,7 @@
 		506808521CA288410040DB97 /* SecurityAuthTouchIDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecurityAuthTouchIDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		506808571CA288410040DB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		506808581CA288410040DB97 /* SecurityAuthTouchIDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityAuthTouchIDTests.swift; sourceTree = "<group>"; };
+		506808621CA289EC0040DB97 /* SecurityAuthTouchID.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SecurityAuthTouchID.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				503C85921CA3901F00D7584E /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 		506808341CA288410040DB97 = {
 			isa = PBXGroup;
 			children = (
+				503C85911CA3901F00D7584E /* CloudKit.framework */,
 				5068083F1CA288410040DB97 /* SecurityAuthTouchID */,
 				506808551CA288410040DB97 /* SecurityAuthTouchIDTests */,
 				5068083E1CA288410040DB97 /* Products */,
@@ -77,6 +82,7 @@
 		5068083F1CA288410040DB97 /* SecurityAuthTouchID */ = {
 			isa = PBXGroup;
 			children = (
+				506808621CA289EC0040DB97 /* SecurityAuthTouchID.entitlements */,
 				506808421CA288410040DB97 /* AppDelegate.swift */,
 				506808441CA288410040DB97 /* ViewController.swift */,
 				506808461CA288410040DB97 /* Main.storyboard */,
@@ -161,6 +167,18 @@
 				TargetAttributes = {
 					5068083C1CA288410040DB97 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = T23PE6R3CV;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					506808511CA288410040DB97 = {
 						CreatedOnToolsVersion = 6.1;
@@ -336,9 +354,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SecurityAuthTouchID/SecurityAuthTouchID.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SecurityAuthTouchID/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -346,9 +368,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SecurityAuthTouchID/SecurityAuthTouchID.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SecurityAuthTouchID/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -405,6 +431,7 @@
 				5068085E1CA288410040DB97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5068085F1CA288410040DB97 /* Build configuration list for PBXNativeTarget "SecurityAuthTouchIDTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +440,7 @@
 				506808611CA288410040DB97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

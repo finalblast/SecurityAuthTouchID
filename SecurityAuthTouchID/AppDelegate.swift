@@ -15,7 +15,67 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        let key = "Full Name"
+        let value = "Nam Huynh"
+        let valueData = value.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
+        let accessGroup = "F3FU372W5M.*"
+        
+        let service = NSBundle.mainBundle().bundleIdentifier!
+        let secItem = [
+            kSecClass as NSString: kSecClassGenericPassword as NSString,
+            kSecAttrService as NSString: service,
+            kSecAttrAccount as NSString: key,
+            kSecValueData as NSString: valueData!
+        ] as NSDictionary
+        
+        var result: Unmanaged<AnyObject>? = nil
+        let status = Int(SecItemAdd(secItem, &result))
+        switch status {
+            
+        case Int(errSecSuccess):
+            println("Successfully stored the value")
+        case Int(errSecDuplicateItem):
+            let query = [
+                kSecClass as NSString: kSecClassGenericPassword as NSString,
+                kSecAttrService as NSString: service,
+                kSecAttrAccessGroup as NSString : accessGroup,
+                kSecAttrAccount as NSString: key,
+                kSecAttrSynchronizable as NSString: kCFBooleanTrue
+//                kSecReturnAttributes as NSString: kCFBooleanTrue
+            ] as NSDictionary
+            
+            SecItemDelete(query)
+            
+            var valueAttr: Unmanaged<AnyObject>? = nil
+            let results = Int(SecItemCopyMatching(query, &valueAttr))
+            if results == Int(errSecSuccess) {
+                
+                println("Good")
+                
+                let newData = "Nick".dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
+                let update = [
+                    kSecValueData as NSString: newData!,
+                    kSecAttrComment as NSString: "First Update"
+                ] as NSDictionary
+                
+                let updated = Int(SecItemUpdate(query, update))
+                if updated == Int(errSecSuccess) {
+                    
+                    println("Updated")
+                    
+                } else {
+                    
+                    println("Updating failed! \(updated)")
+                    
+                }
+                
+            }
+            
+        default:
+            println("An error occurred with code \(status)")
+            
+        }
+        
         return true
     }
 
